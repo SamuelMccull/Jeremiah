@@ -1,8 +1,8 @@
 import selenium
 import sys
 import time
-from logIO import logIO
-from Friends import Friends
+import logIO
+import Friends
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
