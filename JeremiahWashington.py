@@ -7,7 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 driver = logIO.login()
-for x in range(10):
+for x in range(1):
     Friends.addFriends(driver)
     time.sleep(3)
 logIO.logout(driver)

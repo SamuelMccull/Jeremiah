@@ -46,5 +46,16 @@ def login():
     return driver
 
 def logout(driver):
-    element = driver.find_element_by_id("logout")
-    element.click()
+    main_button = driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div/div/div/div[1]/div[1]/h1/a')
+    main_button.click()
+
+    time.sleep(0.1)
+
+    options_button = driver.find_element_by_xpath('//*[@id="userNavigationLabel"]')
+    options_button.click()
+
+    time.sleep(1)
+
+    #FIXME this one doesn't work for some reason
+    logout_button = driver.find_element_by_xpath('/html/body/div[7]/div/div/div/div/div[1]/div/div/ul/li[9]')
+    logout_button.click()
